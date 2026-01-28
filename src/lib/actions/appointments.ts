@@ -1,6 +1,7 @@
 "use server";
 
 import { auth } from "@clerk/nextjs/server";
+import { unstable_noStore as noStore } from "next/cache";
 import { prisma } from "../prisma";
 import { AppointmentStatus } from "@prisma/client";
 
@@ -39,6 +40,7 @@ export async function getAppointments() {
 }
 
 export async function getUserAppointments() {
+  noStore();
   try {
     // get authenticated user from Clerk
     const { userId } = await auth();
@@ -65,6 +67,7 @@ export async function getUserAppointments() {
 }
 
 export async function getUserAppointmentStats() {
+  noStore();
   try {
     const { userId } = await auth();
     if (!userId) throw new Error("You must be authenticated");
