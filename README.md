@@ -1,7 +1,5 @@
 <h1 align="center">🦷 Dental Pro – Dental Platform with AI Voice Agent 🦷</h1>
 
-![Demo App](/public/screenshot-for-readme.png)
-
 Highlights:
 
 - 🏠 Modern Landing Page with gradients & images
@@ -20,7 +18,7 @@ Highlights:
 - ⚡ Data Fetching with TanStack Query
 - 🤖 CodeRabbit for PR Optimizations
 - 🧑‍💻 Git & GitHub Workflow (branches, PRs, merges)
-- 🚀 Deployment on Sevalla (free-tier friendly)
+- 🚀 Deployment on Vercel (free-tier friendly)
 
 ---
 
